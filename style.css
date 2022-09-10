@@ -1,0 +1,180 @@
+:root
+{
+   --DarkCyan: hsl(158, 36%, 37%);
+   --Cream: hsl(30, 38%, 92%);
+   --VeryDarkBlue: hsl(212, 21%, 14%);
+   --DarkGrayishBlue: hsl(228, 12%, 48%);
+   --White: hsl(0, 0%, 100%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center; 
+    align-content: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+   
+}
+
+img
+{
+    
+    width: 300px;
+    height: 28.1rem;
+    border-radius: 0.7rem 0 0 0.7rem;
+    
+}
+
+.description
+{
+
+    position: relative;
+    width: 300px;
+    height: 28.1rem;
+    background-color: var(--White);
+    border-radius: 0 0.7rem 0.7rem 0;
+}
+
+.product
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem 0 0 2rem;
+    font-size: 0.73rem;
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 0.4rem;
+}
+
+h1
+{
+    max-width: 15rem;
+    margin: 1rem 0 0 1.7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+    line-height: 2rem;
+}
+
+article
+{
+    margin: 1.7rem;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--DarkGrayishBlue);
+    line-height: 1.4rem;
+    
+}
+
+.cheaper-price
+{
+    
+    margin: 1.7rem;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--DarkCyan);
+}
+
+.old-price
+{
+    margin-top: -3.5rem;
+    margin-left: 11rem;
+    font-family: 'Fraunces', serif;
+    color: var(--DarkGrayishBlue);
+    text-decoration: line-through;
+}
+
+button
+{ 
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0 0 1.95rem;
+    font-family: 'Montserrat', serif;
+    font-size: 0.9rem;
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    border-radius: 0.5rem;
+    border: none;
+    
+}
+
+button:hover
+{
+    background-color: hsl(159, 35%, 21%);
+    cursor: pointer;
+}
+
+.attribution 
+{
+     position: absolute;
+     bottom: 10px;
+     font-size: 1.1rem; 
+     text-align: center;
+     margin: 1rem;
+}
+
+.attribution a
+{ 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none; 
+}
+
+@media only all and (max-width: 600px)
+{
+img
+{
+   content: url('image-product-mobile.jpg');
+   height: 15rem;
+   width: fit-content;
+   border-radius: 0.75rem 0.75rem 0 0;
+ 
+}
+.description
+{
+    width: 21.5rem;
+    height: 23.3rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+
+.attribution
+{
+    display: none;
+}
+
+.product
+{
+    margin: 1.5rem 0 0 1.5rem;
+}
+h1
+{
+    max-width: fit-content;
+    
+
+}
+article
+{
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
+}
+button
+{
+    width: 19rem;
+    margin: 1.5rem 0 1.8rem 1.3rem;
+}
+}
